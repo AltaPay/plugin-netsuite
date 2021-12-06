@@ -1,2 +1,1 @@
-# plugin-netsuite
-AltaPay for NetSuite
+# AltaPay for NetSuite
