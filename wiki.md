@@ -91,7 +91,7 @@ The standard configuration connects the bundle with the test gateway. Follow the
 4. Press Save.
 
 ![configuring_edit](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/configuration_edit.jpg)
-![configuring_save](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/	)
+![configuring_save](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/configuring_save.png)
 
 **Credit/debit cards**
 
