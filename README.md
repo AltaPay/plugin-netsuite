@@ -3,7 +3,7 @@ Through the partnership of AltaPay and NetSuite, we have made it much easier for
 
 ## Supported functionalities
 
-![latest plugin update](img/netsuite.JPG)
+![latest plugin update](Docs/netsuite.JPG)
 
 ## Changelog
 
