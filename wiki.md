@@ -22,7 +22,7 @@ There are up to three steps involved in installing NetSuite:
 
 The bundle ‘Payment Gateways’ (ID 47196) needs to be installed on the merchant NetSuite account.
 
-![search_and_install_module](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Installation/search_and_install_module.jpg)
+![search_and_install_module](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Installation/search_and_install_module.jpg)
 
 1. Select the account, where you want to install AltaPay
 2. Go to: Customization > SuiteBundler > Search & Install bundles
@@ -38,7 +38,7 @@ You have now installed the bundle, but before continuing the configuration you n
 
 1. Go to: Customization > Plug-ins > Manage Plug-ins.
 
-![manage_plugins](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Installation/manage_plugins.jpg)
+![manage_plugins](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Installation/manage_plugins.jpg)
 
 2. Check if the AltaPay bundle is enabled. If not, check the checkbox.
 
@@ -68,8 +68,8 @@ The standard configuration connects the bundle with the test gateway. Follow the
 3. Click ‘Edit’ and replace 'testgateway.altapaysecure.com' with the gateway information for your production environment (provided by AltaPay). Do not include ’https’.
 4. Press Save.
 
-![configuring_edit](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/configuration_edit.jpg)
-![configuring_save](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/	)
+![configuring_edit](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/configuration_edit.jpg)
+![configuring_save](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/	)
 
 **Credit/debit cards**
 
@@ -77,7 +77,7 @@ In this step you add card as payment method in the web shop. You must complete t
 
 1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 
-![altapay_plugin_profile](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/altapay_plugin_profile.jpg)
+![altapay_plugin_profile](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/altapay_plugin_profile.jpg)
 
 2. Complete the details, using the notes below for guidance.
 
@@ -127,11 +127,11 @@ In this step you add card as payment method in the web shop. You must complete t
 3. Press Save.
 4. Go to Setup > Accounting > Accounting lists > New > Select ‘Payment Method’.
 
-![select_payment_method](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/select_payment_method.jpg)
+![select_payment_method](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/select_payment_method.jpg)
 
 5. Complete the details, using the screenshot and notes below for guidance.
 
-![complete_payment_method_details](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/complete_payment_method_details.png)
+![complete_payment_method_details](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/complete_payment_method_details.png)
 
 <table>
 <tbody>
@@ -166,7 +166,7 @@ Next, you need to configure the payments. **This is mandatory if CVC needs to be
 
 1. Go to Setup > Accounting > Accounting preferences > Click the tab ‘Items/Transactions’ .
 
-![preferences_item_transactions](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/preferences_item_transactions.jpg)
+![preferences_item_transactions](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/preferences_item_transactions.jpg)
 
 2. Check ‘USE CARD SECURITY CODE FOR CREDIT CARD TRANSACTIONS’ under the ‘Payment Processing’ section
 3. Press Save.
@@ -177,7 +177,7 @@ Now, enable the payments on the website.
 2. Click edit on the website for which you want to enable payments.
 3. Click the ‘Shopping’ tab and check ‘REQUIRE AUTHORIZATION FOR CREDIT CARD TRANSACTIONS’.
 
-![click_require_authorization](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/click_require_authorization.jpg)
+![click_require_authorization](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/click_require_authorization.jpg)
 
 Press ‘Save’.
 
@@ -189,7 +189,7 @@ If the merchant has Suite Commerce Advanced version previous to Denali, you must
 4. Go to: Documents > Files > File Cabinet
 5. Go to: Web Site Hosting Files > Live Hosting Files > SSP Applications > NetSuite Inc. -Checkout 2.05.0 > Custom Checkout > js > src > core
 
-![custom_checkout](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/custom_checkout.jpg)
+![custom_checkout](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/custom_checkout.jpg)
 
 6. Click on ‘Add files’ and select the ‘Util.js’ that you modified.
 7. Replace the ‘img/altapay.jpg’ with an image that represents the payment method. The image can be uploaded from here: Documents > Files > File Cabinet and navigate to Web Site Hosting Files > Live Hosting Files > SSP Applications > NetSuite Inc. - Checkout 2.05.0 > Custom Checkout -> img
@@ -197,7 +197,7 @@ If the merchant has Suite Commerce Advanced version previous to Denali, you must
 9. Click on New Folder > name it Altapay
 10. Select SuiteCommerce Site Templates before saving the new folder in the TYPE dropdown
 
-![suite_commerce](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/suite_commerce.jpg)
+![suite_commerce](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/suite_commerce.jpg)
 
 11. Go to: Documents > Files > File Cabinet > Web Site Hosting Files > Live Hosting Files > SSP Applications > NetSuite Inc. - Checkout 2.05.0 > Custom Checkout > js > src > app > modules > Altapay
 12. Click ‘Add files’ and select the ‘configuration.js’, that you modified
@@ -211,7 +211,7 @@ Input-files:      utils/BootUtilities.js utils/json2.js libs/require.js         
 
 libs/jquery.js libs/backbone.js                 libs/backbone.validation.js libs/bootstrap.js
 
-src/core/Main.js                    src/core/Utils.js src/core/ApplicationSkeleton.js
+src/core/Documentation.js                    src/core/Utils.js src/core/ApplicationSkeleton.js
 
 src/app/modules/BackToTop/*.js src/core/extras/*.js        src/app/Application.js
 
@@ -272,7 +272,7 @@ If you support alternative payment methods (e.g. wallet, ePayment etc.), you can
 >1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 >2. Complete the details, using the screenshot and notes below for guidance.
 
->![altapay_plugin_profile_2](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/altapay_plugin_profile_2.jpg)
+>![altapay_plugin_profile_2](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/altapay_plugin_profile_2.jpg)
 
 <table>
 <tbody>
@@ -341,7 +341,7 @@ If an AVS result does not appear in Accept or Hold, the AVS result will be rejec
 4. Go to Setup > Accounting > Accounting lists > New
 5. Select ‘Payment Method’.
 
-![new_payment_methods](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Configuration/new_payment_methods.jpg)
+![new_payment_methods](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Configuration/new_payment_methods.jpg)
 
 Complete the details, using the screenshot and the notes below for guidance.
 
@@ -395,7 +395,7 @@ AVS must also be supported by the acquirer and is only supported by issuers in t
 1. Display the Payment Processing Profile.
 2. Complete the AVS details, using the screenshot and notes below for guidance.
 
-![auth_credentials](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/AVS/auth_credentials.jpg)
+![auth_credentials](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/AVS/auth_credentials.jpg)
 
 <table>
 <tbody>
@@ -517,7 +517,7 @@ To ensure that reconciliation entries related to orders are populated on the cor
 
 AltaPay reconciliation > Reconciliation Setup > Setup Accounts.
 
-![reconciliation](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Reconciliation/reconciliation.jpg)
+![reconciliation](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Reconciliation/reconciliation.jpg)
 
 <table>
 <tbody>
@@ -567,7 +567,7 @@ Go to: Setup -> Accounting -> Accounting lists
 
 Here the AltaPay payment methods should have the setting: “GROUP WITH UNDEPOSITED FUNDS”.
 
-![group_undeposited_funds](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/Reconciliation/group_undeposited_funds.jpg)
+![group_undeposited_funds](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/Reconciliation/group_undeposited_funds.jpg)
 
 **Uploading Funding Files**
 
@@ -585,7 +585,7 @@ When the funding file is successfully uploaded, there will be a message “Fundi
 > In the case where you experience an issue with the AltaPay bundle we would like you to provide us with the steps leading to the issue and a log file. You can access the log file by following three simple steps.
 >1. Go to: Customization > Plug-ins > Plug-in implementations
 
->![log_files](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/log_files.jpg)
+>![log_files](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/log_files.jpg)
 
 >2. Click ‘Edit’ or ’View ’ beside ‘AltaPay’ 
 >3. Click on the tab ‘Execution Log’
@@ -594,44 +594,44 @@ When the funding file is successfully uploaded, there will be a message “Fundi
  
 1. First, add filtering criteria to the logs view by clicking “Customize View”
 
->![customize_vew](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/customize_vew.jpg)
+>![customize_vew](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/customize_vew.jpg)
 
 2. In the new window navigate to the “Criteria” tab
 
->![criteria](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/criteria.jpg)
+>![criteria](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/criteria.jpg)
 
 3. Set the days from when to extract needed logs. There is already included filter for the date filter with default value set to “today”. To change this, click on the “Set Description” button next to the “Date” filter
 
->![date_filter](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/date_filter.png)
+>![date_filter](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/date_filter.png)
 
 4. A new window is displayed where date filters can be set. Date filters can be set with relative settings based on today’s date or absolute. 
 
->![date_filter_set](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/date_filter_set.png)
+>![date_filter_set](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/date_filter_set.png)
 
 <b>Example</b>
 
 To retrieve all the logs from yesterday and today’s date perform following steps:
 - In the “Date” select list set value “within”
 - In the “From” field select yesterday’s date
->![custom_date](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/custom_date.png)
+>![custom_date](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/custom_date.png)
 - In the “To” field select today’s date 
 
 5. Click "Set" to apply the changes.
 6. Now set the filter for the script. In that way, only logs related to “AltaPay” bundle will be shown. To do that select “Script” value from the list.
 
->![script](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/script.jpg)
+>![script](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/script.jpg)
 
 7. A new window will appear where actual value for the script should be configured. In the text area, key in AltaPay.
 
->![value_for_script](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/value_for_script.png)
+>![value_for_script](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/value_for_script.png)
 
 8. Now click "Preview" to preview the extract.
 
->![preview](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/preview.jpg)
+>![preview](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/preview.jpg)
 
 9. All logs which meet given criteria will be shown on the results page. To export logs, select “Export -PDF” or “Export - Microsoft Excel”
 
->![export](https://github.com/AltaPay/plugin-netsuite/blob/main/Docs/FAQ/export.jpg)
+>![export](https://github.com/AltaPay/plugin-netsuite/blob/Documentation/Docs/FAQ/export.jpg)
 
 **How can I remove the gateway field in the payment processing profile?**
 > If there is a gateway field in the payment processing profile, this can be ignored. However, you can remove the field:
