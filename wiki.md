@@ -62,8 +62,6 @@ You have now installed the bundle, but before continuing the configuration you n
 
 # Configuration
 
-**Configuring the NetSuite Plugin**
-
 You can configure the NetSuite plugin to meet your (merchant’s) needs. This includes adding payment methods and configuring payments.
 
 **Prerequisites**
