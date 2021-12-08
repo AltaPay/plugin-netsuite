@@ -24,8 +24,6 @@ Installing this plug-in will enable the web shop to handle card transactions thr
 
 # Installation
 
-**Installing NetSuite**
-
 Installing this bundle will enable your web site to handle card transactions through AltaPay’s gateway.
 
 Be aware that due to NetSuite limitations, if NetSuite is used as a front end, customers do not get informed if the transaction declines/fails. Only the merchant will be notified.
@@ -285,11 +283,11 @@ Version: 2
 
 **Alternative payment methods**
 
-If you support alternative payment methods (e.g. wallet, ePayment etc.), you can add the alternative web shop’s payment methods by follow the instructions below
+If you support alternative payment methods (e.g. wallet, ePayment etc.), you can add the alternative web shop’s payment methods by following the instructions below
 
 >**Notes.**
 
->Alternative payment as gift cards and some invoice providers (Klarna and Arvato) are not supported. Alternative payments is only available for web shops using SiteBuilder and NOT Suite Commerce Advanced. Support for Suite Commerce Advanced web shops is available from NetSuite version 16.1. For each currency and payment method you need to go through steps described above.
+>Alternative payment as gift cards and some invoice providers (Klarna and Arvato) are not supported. Alternative payments are only available for web shops using SiteBuilder and NOT Suite Commerce Advanced. Support for Suite Commerce Advanced web shops is available from NetSuite version 16.1. For each currency and payment method you need to go through steps described above.
 
 >1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 >2. Complete the details, using the screenshot and notes below for guidance.
@@ -689,7 +687,7 @@ If nothing is done the order will be hold in NetSuite. You can see the reason he
 
 >>If you utilize a bespoke version of ReD, the reason for the deny recommendation can be located in the ReD CSI interface.
 
->>If the merchant doesn’t want to fulfilthe order, they have to cancel it. It will be good practice to release the orders in our backend, so there are no reservations on debit cards. If the merchant will handle this order, they will have to ‘Override the payment hold’ and fulfil the order.
+>>If the merchant doesn’t want to fulfill the order, they have to cancel it. It will be good practice to release the orders in our backend, so there are no reservations on debit cards. If the merchant will handle this order, they will have to ‘Override the payment hold’ and fulfill the order.
 
 >>The merchant can find the ‘Challenge’ orders here:
 
