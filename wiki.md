@@ -88,7 +88,7 @@ The standard configuration connects the bundle with the test gateway. Follow the
 
 ![configuring_edit](/Docs/Configuration/configuration_edit.jpg)
 
-![configuring_save](/Docs/Configuration/configuration_save.png)
+<img src="/Docs/Configuration/configuration_save.png" alt="configuring_edit" height="400">
 
 **Credit/debit cards**
 
