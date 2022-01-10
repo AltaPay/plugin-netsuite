@@ -15,6 +15,8 @@ Installing this plug-in will enable the web shop to handle card transactions thr
 
 [Configuration](#configuration)
 
+[Alternative Payment Methods](#alternative-payment-methods)
+
 [Address Verification System](#avs)
 
 [Reconciliation](#reconciliation)
@@ -280,7 +282,7 @@ Version: 2
 
 16. Save the file and make sure that the ’Application-xxxx.js’ and ’current.js’ files have been regenerated.
 
-**Alternative payment methods**
+# Alternative payment methods
 
 If you support alternative payment methods (e.g. wallet, ePayment etc.), you can add the alternative web shop’s payment methods by following the instructions below
 
