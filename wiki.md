@@ -98,7 +98,7 @@ In this step you add card as payment method in the web shop. You must complete t
 
 1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 
-![altapay_plugin_profile](/Docs/Configuration/altapay_plugin_profile.png)
+<img src="/Docs/Configuration/altapay_plugin_profile.png" alt="altapay_plugin_profile" width="400">
 
 2. Complete the details, using the notes below for guidance.
 
@@ -134,8 +134,8 @@ In this step you add card as payment method in the web shop. You must complete t
     <td>Add terminal.</td>
   </tr>
   <tr>
-    <td><strong>AltaPay 3DSecure V2 Auth</strong></td>
-    <td>Enable this, if you want to enable AltaPay 3dsecure v2 authentication.</td>
+    <td><strong>AltaPay 3DSecure Auth</strong></td>
+    <td>Enable this, if you want to enable AltaPay 3dsecure authentication. You should enable Authentications option from Gateway Request Types as well.</td>
   </tr>
   <tr>
     <td><strong>Alternative payment</strong></td>
@@ -143,7 +143,7 @@ In this step you add card as payment method in the web shop. You must complete t
   </tr>
   <tr>
     <td><strong>Gateway Request Types</strong></td>
-    <td>Add the types that are needed for the terminal. To process payments with 3D Secure 2.0, check the Authentications box in the Gateway Request Types.</td>
+    <td>Add the types that are needed for the terminal. To process payments with 3D Secure v1 or v2, check the Authentications box in the Gateway Request Types.</td>
   </tr>
 </tbody>
 </table>
