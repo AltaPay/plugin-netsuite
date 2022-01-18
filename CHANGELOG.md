@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.3]
+- Add support for 3DSecure v2 using authentication operation
+
 ## [1.6.2]
 - Fix Merchant API issue for alternative payments
 

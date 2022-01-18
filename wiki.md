@@ -15,6 +15,8 @@ Installing this plug-in will enable the web shop to handle card transactions thr
 
 [Configuration](#configuration)
 
+[Alternative Payment Methods](#alternative-payment-methods)
+
 [Address Verification System](#avs)
 
 [Reconciliation](#reconciliation)
@@ -88,7 +90,7 @@ The standard configuration connects the bundle with the test gateway. Follow the
 
 ![configuring_edit](/Docs/Configuration/configuration_edit.jpg)
 
-![configuring_save](/Docs/Configuration/configuration_save.png)
+<img src="/Docs/Configuration/configuration_save.png" alt="configuring_edit" height="400">
 
 **Credit/debit cards**
 
@@ -96,7 +98,7 @@ In this step you add card as payment method in the web shop. You must complete t
 
 1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 
-![altapay_plugin_profile](/Docs/Configuration/altapay_plugin_profile.jpg)
+<img src="/Docs/Configuration/altapay_plugin_profile.png" alt="altapay_plugin_profile" width="400">
 
 2. Complete the details, using the notes below for guidance.
 
@@ -132,12 +134,16 @@ In this step you add card as payment method in the web shop. You must complete t
     <td>Add terminal.</td>
   </tr>
   <tr>
+    <td><strong>AltaPay 3DSecure Auth</strong></td>
+    <td>Enable this, if you want to enable AltaPay 3dsecure authentication. You should enable Authentications option from Gateway Request Types as well.</td>
+  </tr>
+  <tr>
     <td><strong>Alternative payment</strong></td>
     <td>Leave the checkbox unchecked.</td>
   </tr>
   <tr>
     <td><strong>Gateway Request Types</strong></td>
-    <td>Add the types that are needed for the terminal.</td>
+    <td>Add the types that are needed for the terminal. To process payments with 3D Secure v1 or v2, check the Authentications box in the Gateway Request Types.</td>
   </tr>
 </tbody>
 </table>
@@ -280,7 +286,7 @@ Version: 2
 
 16. Save the file and make sure that the ’Application-xxxx.js’ and ’current.js’ files have been regenerated.
 
-**Alternative payment methods**
+# Alternative payment methods
 
 If you support alternative payment methods (e.g. wallet, ePayment etc.), you can add the alternative web shop’s payment methods by following the instructions below
 
