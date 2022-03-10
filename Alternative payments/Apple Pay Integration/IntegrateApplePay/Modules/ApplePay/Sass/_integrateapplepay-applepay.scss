@@ -1,0 +1,34 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.applepay-info-card {
+    @extend .info-card;
+}
+
+.applepay-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.altapay-applepay-payment-method{
+	margin-top:10px;
+}
+
+#altapay-apple-pay-btn{
+	display: inline-block;
+	position: relative;
+}
+#altapay-apple-pay-btn > span{
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}

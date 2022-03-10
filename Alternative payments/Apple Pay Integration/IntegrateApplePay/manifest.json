@@ -1,0 +1,108 @@
+{
+    "name": "IntegrateApplePay",
+    "fantasyName": "Apple Pay (Backend Model)",
+    "vendor": "AltaPay",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "version": "1.0.0",
+    "description": "This extension will enable Apple Pay payment option.",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ApplePay.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ApplePay/Configuration/ApplePay.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ApplePay/Templates/dc_integrateapplepay_applepay.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ApplePay/Templates/dc_integrateapplepay_applepay.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ApplePay/Templates/dc_integrateapplepay_applepay.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ApplePay/Sass/_integrateapplepay-applepay.scss",
+            "myaccount": "Modules/ApplePay/Sass/_integrateapplepay-applepay.scss",
+            "checkout": "Modules/ApplePay/Sass/_integrateapplepay-applepay.scss"
+        },
+        "files": [
+            "Modules/ApplePay/Sass/_integrateapplepay-applepay.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.js",
+            "myaccount": "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.js",
+            "checkout": "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.js",
+                    "Modules/ApplePay/JavaScript/ApplePay.View.js",
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.Model.js",
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.SS2Model.js",
+                    "Modules/ApplePay/JavaScript/ApplePay.Global.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.js",
+                    "Modules/ApplePay/JavaScript/ApplePay.View.js",
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.Model.js",
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.SS2Model.js",
+                    "Modules/ApplePay/JavaScript/ApplePay.Global.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.js",
+                    "Modules/ApplePay/JavaScript/ApplePay.View.js",
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.Model.js",
+                    "Modules/ApplePay/JavaScript/DC.IntegrateApplePay.ApplePay.SS2Model.js",
+                    "Modules/ApplePay/JavaScript/ApplePay.Global.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ApplePay/SuiteScript/DC.IntegrateApplePay.ApplePay.js",
+        "files": [
+            "Modules/ApplePay/SuiteScript/DC.IntegrateApplePay.ApplePay.js",
+            "Modules/ApplePay/SuiteScript/ApplePay.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/ApplePay/SuiteScript2/ApplePay.Service.ss"
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "applepayconfiguration",
+        "title": "AltaPay Apple Pay Configuration",
+        "group": "extensions"
+    },
+    "properties": {
+        "ApplePay.merchantURL": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "AltaPay gateway URL",
+            "description": "AltaPay payment gateway URL (e.g. https://merchantName.altapaysecure.com/)"
+        },
+        "ApplePay.username": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Username",
+            "description": "Gateway API username"
+        },
+        "ApplePay.currencyCode": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Currency Code",
+            "description": "USD, GBP, etc"
+        },
+        "ApplePay.supportedNetworks": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Supported Networks",
+            "description": "Please enter comma ',' separated values e.g. 'visa,masterCard,amex,discover'"
+        },
+        "ApplePay.amountLabel": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Total Label",
+            "description": ""
+        },
+        "ApplePay.terminalName": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Terminal Name",
+            "description": "AltaPay Apple Pay Terminal name"
+        },
+        "ApplePay.password": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Password",
+            "description": "Gateway API password"
+        },
+        "ApplePay.countryCode": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Country Code",
+            "description": "US, AU, etc"
+        },
+        "ApplePay.supports3DS": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "boolean",
+            "title": "Support 3D Secure",
+            "description": "true / false"
+        }
+    }
+}
