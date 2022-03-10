@@ -13,7 +13,7 @@
     </style>
     {{#if displayApplePay}}
     <div id="altapay-apple-pay-btn">
-        <apple-pay-button buttonstyle="black" type="plain" locale="en"></apple-pay-button>
+        <apple-pay-button buttonstyle="black" type="pay" locale="en"></apple-pay-button>
         <span></span>
     </div>
     {{/if}}
