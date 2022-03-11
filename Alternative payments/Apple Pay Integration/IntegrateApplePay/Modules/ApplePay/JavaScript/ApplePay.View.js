@@ -126,9 +126,7 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 						if (response.confirmation.statuscode === "success") {
 							status = ApplePaySession.STATUS_SUCCESS;
 							session.completePayment(status);
-							setTimeout(function () {
-								window.location.hash = "confirmation?force=true&last_order_id=" + response.confirmation.internalid;
-							}, 2000);
+							window.location.hash = "confirmation?force=true&last_order_id=" + response.confirmation.internalid;
 						} else {
 							status = ApplePaySession.STATUS_FAILURE;
 							session.completePayment(status);
