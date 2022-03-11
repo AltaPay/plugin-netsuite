@@ -36,21 +36,22 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 		},
 		applePayClicked: function () {
 			const self = this;
-			const supportedNetworks = this.container.getConfig().ApplePay.supportedNetworks.split(",").map((val) => val.trim()) || [];
 			const request = {
 				"countryCode": this.container.getConfig().ApplePay.countryCode.toUpperCase() || "US",
 				"currencyCode": this.container.getConfig().ApplePay.currencyCode.toUpperCase() || "USD",
-				"supportedNetworks": supportedNetworks,
+				"merchantCapabilities": [
+					"supports3DS"
+				],
+				"supportedNetworks": [
+					"visa",
+					"masterCard"
+				],
 				"total": {
 					"label": this.container.getConfig().ApplePay.amountLabel || "AltaPay Apple Charge",
 					"type": "final",
 					"amount": this.liveOrderModel.get('summary').total
 				}
 			};
-
-			if(this.container.getConfig().ApplePay.supports3DS){				
-				request['merchantCapabilities'] = ["supports3DS"];
-			}
 
 			const session = new ApplePaySession(3, request);
 
@@ -111,12 +112,6 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 			session.onpaymentauthorized = event => {
 				// Define ApplePayPaymentAuthorizationResult
 
-				const result = {
-					"status": ApplePaySession.STATUS_SUCCESS
-				};
-
-				session.completePayment(result);
-
 				var cart = this.container.getComponent('Cart');
 
 				var data = {
@@ -127,10 +122,16 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 
 				cart.setTransactionBodyField(data).then(function () {
 					cart.submit().then(function (response) {
+						var status;
 						if (response.confirmation.statuscode === "success") {
-							window.location.hash = "confirmation?force=true&last_order_id=" + response.confirmation.internalid;
+							status = ApplePaySession.STATUS_SUCCESS;
+							session.completePayment(status);
+							setTimeout(function () {
+								window.location.hash = "confirmation?force=true&last_order_id=" + response.confirmation.internalid;
+							}, 2000);
 						} else {
-							console.log('Apple Pay payment failed.');
+							status = ApplePaySession.STATUS_FAILURE;
+							session.completePayment(status);
 							alert("Apple Pay payment failed.");
 						}
 					});

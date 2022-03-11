@@ -27,13 +27,6 @@
             "title": "Currency Code",
             "description": "USD, GBP, etc"
         },
-        "ApplePay.supportedNetworks": {
-            "group": "extensions",
-            "subtab": "applepayconfiguration",
-            "type": "string",
-            "title": "Supported Networks",
-            "description": "Please enter comma ',' separated values e.g. 'visa,masterCard,amex,discover'"
-        },
         "ApplePay.amountLabel": {
             "group": "extensions",
             "subtab": "applepayconfiguration",
@@ -61,13 +54,6 @@
             "type": "string",
             "title": "Country Code",
             "description": "US, AU, etc"
-        },
-        "ApplePay.supports3DS": {
-            "group": "extensions",
-            "subtab": "applepayconfiguration",
-            "type": "boolean",
-            "title": "Support 3D Secure",
-            "description": "true / false"
         }
     }
 }
