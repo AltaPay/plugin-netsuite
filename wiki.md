@@ -431,13 +431,13 @@ To integrate the Apple Pay payments in SCA follow the same steps mentioned in th
 
     * Navigate to Commerce > Extensions > Extension Manager and **Activate** the extension.
     ![activate_extension](/Docs/Configuration/activate_extension.jpg)  
-    * To configure the extension navigate to Commerce > Websites > Configuration  and select the Website and Domain and click on the ‘Configure’ button.
-    * Update the configurations in the ‘AltaPay Apple Pay Configuration’ tab and Save the settings.
+    * To configure the extension navigate to Commerce > Websites > Configuration  and select the Website and Domain and click on the **Configure** button.
+    * Update the configurations in the **AltaPay Apple Pay Configuration** tab and Save the settings.
     ![apple_pay_configuration](/Docs/Configuration/apple_pay_configuration.jpg)
 
 3. Add User Event on Sales Order
     * Navigate to Customization > Scripting > Scripts > New
-    * Upload ‘updatePaymentCustomData.js’ file from **Alternative payments** > **Apple Pay Integration** > **User Events** folder and click on **Save**.
+    * Upload **updatePaymentCustomData.js** file from **Alternative payments** > **Apple Pay Integration** > **User Events** folder and click on **Save**.
     ![add_new_script](/Docs/Configuration/add_new_script.jpg)
     * Click on **Create Script Record** button.
     ![create_script_record](/Docs/Configuration/create_script_record.jpg)
