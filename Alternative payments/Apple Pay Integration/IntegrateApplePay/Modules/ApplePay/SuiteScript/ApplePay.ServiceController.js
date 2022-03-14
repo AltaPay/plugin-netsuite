@@ -140,6 +140,7 @@ define("DC.IntegrateApplePay.ApplePay.ServiceController", ["ServiceController"],
         headers['Authorization'] = "Basic " + Base64.encode(Configuration.get("ApplePay.username") + ":" + Configuration.get("ApplePay.password"));
         var requestData = {
           "terminal": Configuration.get("ApplePay.terminalName"),
+          "domain": Configuration.get("ApplePay.shopDomain"),
           "validationUrl": validationUrl
         };
         //send the request to the restlet and retrieve the response
