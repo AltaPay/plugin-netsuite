@@ -75,10 +75,12 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 							session.completeMerchantValidation(JSON.parse(altaPaySession));
 						} else {
 							console.log("response", "couldn't validate session");
+							alert('Session validation failed.');
 						}
 					}
 				}).fail((err) => {
 					console.log("error:", err);
+					alert('Session validation failed.');
 				});
 			};
 
