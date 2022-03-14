@@ -17,6 +17,8 @@ Installing this plug-in will enable the web shop to handle card transactions thr
 
 [Alternative Payment Methods](#alternative-payment-methods)
 
+* [Apple Pay Integration](#apple-pay-integration)
+
 [Address Verification System](#avs)
 
 [Reconciliation](#reconciliation)
@@ -410,6 +412,41 @@ Add payment form
 2. Find the ‘ns_form.html’ in the ‘Alternative payments’ subfolder
 3. Go to: Documents > Files > File Cabinet > Web Hosting Files > Live Hosting > site
 4. Click on ‘Add file’ and select the ‘ns_form.html’
+
+## Apple Pay Integration
+
+To integrate the Apple Pay payments in SCA follow the same steps mentioned in the  [Alternative Payment Methods](#alternative-payment-methods) except for enabling ALTERNATIVE PAYMENTS checkbox, enable APPLE PAY PAYMENTS checkbox from **Altapay Configuration** section and then follow below steps:
+
+1. Configure Extension Development Environment
+   * Set up extension developer tools. See ‘Set Up Extension Developer Tools’ in NetSuite Help Center for more details.
+
+      ![setup_extension_dev_tools](/Docs/Configuration/setup_extension_dev_tools.jpg)
+
+    * Fetch activated extensions from NetSuite account.
+    * Download the zip file from the GitHub repository.
+    * Copy the folder ‘IntegrateApplePay’ from Alternative payments > Apple Pay Integration and paste it into **Workspace** directory.
+    * Deploy the extension.
+
+2. Activate and configure the extension
+
+    * Navigate to Commerce > Extensions > Extension Manager and **Activate** the extension.
+    ![activate_extension](/Docs/Configuration/activate_extension.jpg)  
+    * To configure the extension navigate to Commerce > Websites > Configuration  and select the Website and Domain and click on the **Configure** button.
+    * Update the configurations in the **AltaPay Apple Pay Configuration** tab and Save the settings.
+    ![apple_pay_configuration](/Docs/Configuration/apple_pay_configuration.jpg)
+
+3. Add User Event on Sales Order
+    * Navigate to Customization > Scripting > Scripts > New
+    * Upload **updatePaymentCustomData.js** file from **Alternative payments** > **Apple Pay Integration** > **User Events** folder and click on **Save**.
+    ![add_new_script](/Docs/Configuration/add_new_script.jpg)
+    * Click on **Create Script Record** button.
+    ![create_script_record](/Docs/Configuration/create_script_record.jpg)
+    * Enter the script details.
+    ![custom_data_details](/Docs/Configuration/custom_data_details.jpg)
+    * Click on **Deploy Script** button.
+    ![deploy_custom_script](/Docs/Configuration/deploy_custom_script.jpg)
+    * Select the configurations make sure your script applies to order, status is released and execure role is administrator and then click on **Save** button. 
+    ![deploy_script_details](/Docs/Configuration/deploy_script_details.jpg)
 
 # AVS
 

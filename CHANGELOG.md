@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.4]
+- Add support for Apple Pay payments
+
 ## [1.6.3]
 - Add support for 3DSecure v2 using authentication operation
 
