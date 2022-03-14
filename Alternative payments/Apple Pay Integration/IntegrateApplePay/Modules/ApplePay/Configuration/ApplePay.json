@@ -54,6 +54,13 @@
             "type": "string",
             "title": "Country Code",
             "description": "US, AU, etc"
+        },
+        "ApplePay.shopDomain": {
+            "group": "extensions",
+            "subtab": "applepayconfiguration",
+            "type": "string",
+            "title": "Shop Domain",
+            "description": "Shop domain e.g example.com"
         }
     }
 }
