@@ -22,13 +22,7 @@ define('DC.IntegrateApplePay.ApplePay.Global.View', ['underscore', 'jQuery'], fu
 			}
 		}
 
-		,events: {
-			"change input.order-wizard-paymentmethod-external-module-radio": "countrySelected"
-		},
-	
-		countrySelected: function(){
-			alert("You can procceed!!!");
-		}
+		,events: {}
 
 		,bindings: {}
 
