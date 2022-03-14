@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.4.1]
+- Add configuration field for shop domain
+
 ## [1.6.4]
 - Add support for Apple Pay payments
 
