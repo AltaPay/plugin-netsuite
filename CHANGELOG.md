@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.4.2]
+- Get the currency code dynamically
+- Display warnings using NetSuite native approach
+
 ## [1.6.4.1]
 - Add configuration field for shop domain
 

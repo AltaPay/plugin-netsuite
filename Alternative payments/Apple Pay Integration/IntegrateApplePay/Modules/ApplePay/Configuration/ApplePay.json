@@ -20,13 +20,6 @@
             "title": "Username",
             "description": "Gateway API username"
         },
-        "ApplePay.currencyCode": {
-            "group": "extensions",
-            "subtab": "applepayconfiguration",
-            "type": "string",
-            "title": "Currency Code",
-            "description": "USD, GBP, etc"
-        },
         "ApplePay.amountLabel": {
             "group": "extensions",
             "subtab": "applepayconfiguration",
