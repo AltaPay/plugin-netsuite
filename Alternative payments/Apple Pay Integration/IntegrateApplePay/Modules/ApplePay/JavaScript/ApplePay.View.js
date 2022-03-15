@@ -76,7 +76,7 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 							session.completeMerchantValidation(JSON.parse(altaPaySession));
 						} else {
 							const global_view_message = new GlobalViewsMessageView({
-								message: 'Apple Pay payment failed.',
+								message: 'Session validation failed.',
 								type: 'error',
 								closable: true
 							});
@@ -89,7 +89,7 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 					}
 				}).fail((err) => {
 					const global_view_message = new GlobalViewsMessageView({
-						message: 'Apple Pay payment failed.',
+						message: 'Session validation failed.',
 						type: 'error',
 						closable: true
 					});
