@@ -4,9 +4,10 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 	'DC.IntegrateApplePay.ApplePay.Model',
 	'Backbone',
 	'LiveOrder.Model',
-	'jQuery'
+	'jQuery',
+	'GlobalViews.Message.View'
 ], function (
-	dc_integrateapplepay_applepay_tpl, ApplePayModel, Backbone, LiveOrderModel, jQuery
+	dc_integrateapplepay_applepay_tpl, ApplePayModel, Backbone, LiveOrderModel, jQuery, GlobalViewsMessageView
 ) {
 	'use strict';
 
@@ -38,7 +39,7 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 			const self = this;
 			const request = {
 				"countryCode": this.container.getConfig().ApplePay.countryCode.toUpperCase() || "US",
-				"currencyCode": this.container.getConfig().ApplePay.currencyCode.toUpperCase() || "USD",
+				"currencyCode": SC.ENVIRONMENT.siteSettings.shopperCurrency.code,
 				"merchantCapabilities": [
 					"supports3DS"
 				],
@@ -74,13 +75,29 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 						if (parseJson && parseJson.APIResponse && parseJson.APIResponse.Body.Result.toLowerCase() === 'success') {
 							session.completeMerchantValidation(JSON.parse(altaPaySession));
 						} else {
-							console.log("response", "couldn't validate session");
-							alert('Session validation failed.');
+							const global_view_message = new GlobalViewsMessageView({
+								message: 'Session validation failed.',
+								type: 'error',
+								closable: true
+							});
+							jQuery('[data-cms-area="order_wizard_cms_area_1"]').html(global_view_message.render().$el.html());
+							jQuery('html, body').animate({
+								scrollTop: $('[data-cms-area="order_wizard_cms_area_1').offset().top - 100
+							}, 2000);
+							session.abort();
 						}
 					}
 				}).fail((err) => {
-					console.log("error:", err);
-					alert('Session validation failed.');
+					const global_view_message = new GlobalViewsMessageView({
+						message: 'Session validation failed.',
+						type: 'error',
+						closable: true
+					});
+					jQuery('[data-cms-area="order_wizard_cms_area_1"]').html(global_view_message.render().$el.html());
+					jQuery('html, body').animate({
+						scrollTop: $('[data-cms-area="order_wizard_cms_area_1').offset().top - 100
+					}, 2000);
+					session.abort();
 				});
 			};
 
@@ -132,16 +149,40 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 						} else {
 							status = ApplePaySession.STATUS_FAILURE;
 							session.completePayment(status);
-							alert("Apple Pay payment failed.");
+							const global_view_message = new GlobalViewsMessageView({
+								message: 'Apple Pay payment failed.',
+								type: 'error',
+								closable: true
+							});
+							
+							jQuery('[data-cms-area="order_wizard_cms_area_1"]').html(global_view_message.render().$el.html());
+							jQuery('html, body').animate({
+								scrollTop: $('[data-cms-area="order_wizard_cms_area_1').offset().top - 100
+							}, 2000);
+							session.abort();
 						}
 					});
 				}).fail(function (error) {
-					alert("Apple Pay payment failed.");
+					const global_view_message = new GlobalViewsMessageView({
+						message: 'Apple Pay payment failed.',
+						type: 'error',
+						closable: true
+					});
+					jQuery('[data-cms-area="order_wizard_cms_area_1"]').html(global_view_message.render().$el.html());
+					jQuery('html, body').animate({
+						scrollTop: $('[data-cms-area="order_wizard_cms_area_1').offset().top - 100
+					}, 2000);
+					session.abort();
 				});
 			};
 
 			session.oncancel = event => {
-				alert("Apple Pay payment has been canceled.");
+				const global_view_message = new GlobalViewsMessageView({
+					message: 'Apple Pay payment has been canceled.',
+					type: 'error',
+					closable: true
+				});
+				jQuery('[data-cms-area="order_wizard_cms_area_1"]').html(global_view_message.render().$el.html());
 			};
 
 			session.begin();
