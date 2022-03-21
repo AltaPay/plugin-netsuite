@@ -643,6 +643,32 @@ Click on the “Select file” and select a funding file that has been downloade
 
 When the funding file is successfully uploaded, there will be a message “Funding files successfully handled” and there will be an option to upload another funding file. If the funding data couldn’t be populated within NetSuite, log entries will be shown, leading up to the error. For further details, see the log files.
 
+# NetSuite Customer Center
+
+The AtaPay plugin is supported with the NetSuite-provided Customer Center portal, which gives access to the customers to place orders, request a return, view their transaction history, get quotes and make payment etc.
+
+**Enable Customer Center**
+
+To enable customer center
+ - Navigate to Setup > Company > Enable Features
+ - Choose **Web Presence** sub tab
+ - Select the **Customer Access** checkbox
+ - Click on the save button
+
+    ![customeraccess](/Docs/CustomerCenter/customer_access.jpg)
+
+**Provide customer center access to individual customers**
+
+To provide customer center access to individual customers follow the below steps.
+
+- Navigate to Lists > Relationships > Customers
+- Click **Edit** link next to the customer that you want to assign a role to
+- Click the **Access** tab
+- Select the **Give Access** checkbox
+- Click on the save button
+
+    ![giveaccess](/Docs/CustomerCenter/give_access_to_customer_center.jpg)
+
 # FAQ
 
 **Where can I find the log files?**
