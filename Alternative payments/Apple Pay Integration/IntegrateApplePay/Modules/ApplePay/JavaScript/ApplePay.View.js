@@ -215,7 +215,7 @@ define('DC.IntegrateApplePay.ApplePay.View', [
 			if (this.stepInfo !== undefined) {
 				_this.isReviewPage = (_this.stepInfo.step_group_name.toLowerCase() === "review") ? true : false;
 				let paymentMethodName = jQuery("[data-view='PaymentMethods.Collection']").find(".global-views-format-payment-method").html().trim();
-				_this.applepay = (paymentMethodName.toLowerCase().indexOf('applepay') !== -1) ? true : false;
+				_this.applepay = (paymentMethodName.toLowerCase().indexOf('apple') !== -1) ? true : false;
 				// console.log(paymentMethodName, _this.applepay, this.liveOrderModel.get('paymentmethods'));
 				clearInterval(interval);
 			}
