@@ -24,22 +24,26 @@ define(
 				var appleDataId = "external_checkout_" + applepay.key;
 
 				if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) === false && appleDataId) {
-					jQuery('a[data-id="' + appleDataId + '"]').closest('.backbone-collection-view-cell-span4').hide();
+					jQuery('a[data-id="' + appleDataId + '"]').closest('[class^=backbone-collection-view-cell-span]').hide();
 				}
 
-				jQuery('body').on('click .order-wizard-paymentmethod-selector-module-button-group a.order-wizard-paymentmethod-selector-module-button', function () {
-					var selectedPaymentMethod = jQuery("input[name='paymentmethod-external-option']:checked").data("id");
+				document.addEventListener('click', function (e) {
 
-					if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) === false && appleDataId) {
-						jQuery('a[data-id="' + appleDataId + '"]').closest('.backbone-collection-view-cell-span4').hide();
-					}
+					if (e.target && (e.target.className.indexOf("order-wizard-paymentmethod-selector-module-button") !== -1 || e.target.className.indexOf("order-wizard-paymentmethod-external-module") !== -1)) {
 
-					if (appleDataId === selectedPaymentMethod) {
-						jQuery('.order-wizard-paymentmethod-others-module-description').hide();
-					} else {
-						jQuery('.order-wizard-paymentmethod-others-module-description').show();
+						var selectedPaymentMethod = jQuery("input[name='paymentmethod-external-option']:checked").data("id");
+
+						if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent) === false && appleDataId) {
+							jQuery('a[data-id="' + appleDataId + '"]').closest('[class^=backbone-collection-view-cell-span]').hide();
+						}
+
+						if (appleDataId === selectedPaymentMethod) {
+							jQuery('.order-wizard-paymentmethod-others-module-description').hide();
+						} else {
+							jQuery('.order-wizard-paymentmethod-others-module-description').show();
+						}
 					}
-				})
+				});
 			});
 		}
 	};

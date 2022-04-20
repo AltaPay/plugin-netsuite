@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.4.4]
+- Fix: Apple Pay option showing for non-safari browsers on mobile
+
 ## [1.6.4.3]
 - Hide Apple Pay option for non-safari browsers
 - Hide external payment site redirection note when Apple Pay selected
