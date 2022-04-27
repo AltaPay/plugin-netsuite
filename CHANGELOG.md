@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.5]
+- Fix: Invoice payment error with Hosted Payment Page/External Checkout
+
 ## [1.6.4.4]
 - Fix: Apple Pay option showing for non-safari browsers on mobile
 
