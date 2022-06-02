@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.6]
+- Add additional customer_info parameters
+
 ## [1.6.5]
 - Fix: Invoice payment error with Hosted Payment Page/External Checkout
 
