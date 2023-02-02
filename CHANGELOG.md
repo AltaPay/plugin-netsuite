@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.7]
+- Fix: Duplicate transaction created on the gateway for invoice payments
+
 ## [1.6.6]
 - Add additional customer_info parameters
 
