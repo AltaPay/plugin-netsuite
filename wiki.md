@@ -4,7 +4,7 @@ Through the partnership of AltaPay and NetSuite, we have made it much easier for
 
 All you have to do is to install the bundle, which will only take a few minutes to complete. 
 
-# NetSuite Payment plugin installation guide
+## Installation guide
 
 Installing this plug-in will enable the web shop to handle card transactions through AltaPay's gateway.
 
@@ -19,6 +19,8 @@ Installing this plug-in will enable the web shop to handle card transactions thr
 
 * [Apple Pay Integration](#apple-pay-integration)
 
+[Payment Link](#payment-link)
+
 [Address Verification System](#avs)
 
 [Reconciliation](#reconciliation)
@@ -28,7 +30,7 @@ Installing this plug-in will enable the web shop to handle card transactions thr
 [FAQ](#faq)
 
 
-# Installation
+## Installation
 
 Installing this bundle will enable your web site to handle card transactions through AltaPay’s gateway.
 
@@ -62,11 +64,11 @@ You have now installed the bundle, but before continuing the configuration you n
 
 1. Go to: Customization > Plug-ins > Manage Plug-ins.
 
-![manage_plugins](/Docs/Installation/manage_plugins.jpg)
+    ![manage_plugins](/Docs/Installation/manage_plugins.jpg)
 
 2. Check if the AltaPay bundle is enabled. If not, check the checkbox.
 
-# Configuration
+## Configuration
 
 You can configure the NetSuite plugin to meet your (merchant’s) needs. This includes adding payment methods and configuring payments.
 
@@ -92,9 +94,9 @@ The standard configuration connects the bundle with the test gateway. Follow the
 3. Click ‘Edit’ and replace 'testgateway.altapaysecure.com' with the gateway information for your production environment (provided by AltaPay). Do not include ’https’.
 4. Press Save.
 
-![configuring_edit](/Docs/Configuration/configuration_edit.jpg)
+    ![configuring_edit](/Docs/Configuration/configuration_edit.jpg)
 
-<img src="/Docs/Configuration/configuration_save.png" alt="configuring_edit" height="400">
+    <img src="/Docs/Configuration/configuration_save.png" alt="configuring_edit" height="400">
 
 **Credit/debit cards**
 
@@ -102,7 +104,7 @@ In this step you add card as payment method in the web shop. You must complete t
 
 1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 
-<img src="/Docs/Configuration/altapay_plugin_profile.png" alt="altapay_plugin_profile" width="400">
+    <img src="/Docs/Configuration/altapay_plugin_profile.png" alt="altapay_plugin_profile" width="400">
 
 2. Complete the details, using the notes below for guidance.
 
@@ -290,7 +292,7 @@ Version: 2
 
 16. Save the file and make sure that the ’Application-xxxx.js’ and ’current.js’ files have been regenerated.
 
-# Alternative payment methods
+## Alternative payment methods
 
 If you support alternative payment methods (e.g. wallet, ePayment etc.), you can add the alternative web shop’s payment methods by following the instructions below
 
@@ -450,7 +452,48 @@ To integrate the Apple Pay payments in SCA follow the same steps mentioned in th
     * Select the configurations make sure your script applies to order, status is released and execure role is administrator and then click on **Save** button. 
     ![deploy_script_details](/Docs/Configuration/deploy_script_details.jpg)
 
-# AVS
+## Payment Link
+
+**Enable Payment Link feature**
+
+To enable the  Payment Link feature:
+
+* Navigate to Setup > Enables Features
+* Select **Transactions** subtab
+* Enable **Payment Link** checkbox
+* Click **Save**
+
+  ![enable_payment_link](/Docs/PaymentLink/enable_payment_link.png)
+
+
+**Configure Payment Link**
+
+To configure the payment link:
+* Go to Commerce > Payment Link
+* Fill out the listed fields for each category
+* Click **Save**
+
+  ![payment_link](/Docs/PaymentLink/payment_link_page.png)
+
+**Email Invoice**
+
+To send the invoice to the customer
+
+* Open any invoice
+* Navigate to **Communication** subtab and click on **Email** button.
+
+  ![email_invoice](/Docs/PaymentLink/email_invoice.png)
+
+* Select email template from **Message** subtab
+* Click **Merge & Send**
+
+  ![email_message](/Docs/PaymentLink/email_message.png)
+
+Customer will receive the invoice email with the payment link where he can choose the preferred payment method and complete the payment.
+
+  ![invoice_page](/Docs/PaymentLink/invoice_page.png)
+
+## AVS
 
 **Address Verification System (AVS)**
 
@@ -461,7 +504,7 @@ AVS must also be supported by the acquirer and is only supported by issuers in t
 1. Display the Payment Processing Profile.
 2. Complete the AVS details, using the screenshot and notes below for guidance.
 
-![auth_credentials](/Docs/AVS/auth_credentials.jpg)
+    ![auth_credentials](/Docs/AVS/auth_credentials.jpg)
 
 <table>
 <tbody>
@@ -569,7 +612,7 @@ Here is a list of AVS cases that can occur. As a merchant you will need to decid
 </tbody>
 </table>
 
-# Reconciliation
+## Reconciliation
 
 Go to: Customization > Scripting > Scripts
 
@@ -583,7 +626,7 @@ To ensure that reconciliation entries related to orders are populated on the cor
 
 AltaPay reconciliation > Reconciliation Setup > Setup Accounts.
 
-![reconciliation](/Docs/Reconciliation/reconciliation.jpg)
+  ![reconciliation](/Docs/Reconciliation/reconciliation.jpg)
 
 <table>
 <tbody>
@@ -633,7 +676,7 @@ Go to: Setup -> Accounting -> Accounting lists
 
 Here the AltaPay payment methods should have the setting: “GROUP WITH UNDEPOSITED FUNDS”.
 
-![group_undeposited_funds](/Docs/Reconciliation/group_undeposited_funds.jpg)
+  ![group_undeposited_funds](/Docs/Reconciliation/group_undeposited_funds.jpg)
 
 **Uploading Funding Files**
 
@@ -645,7 +688,7 @@ Click on the “Select file” and select a funding file that has been downloade
 
 When the funding file is successfully uploaded, there will be a message “Funding files successfully handled” and there will be an option to upload another funding file. If the funding data couldn’t be populated within NetSuite, log entries will be shown, leading up to the error. For further details, see the log files.
 
-# NetSuite Customer Center
+## NetSuite Customer Center
 
 The AtaPay plugin is supported with the NetSuite-provided Customer Center portal, which gives access to the customers to place orders, request a return, view their transaction history, get quotes and make payment etc.
 
