@@ -100,6 +100,10 @@ The standard configuration connects the bundle with the test gateway. Follow the
 
 **Credit/debit cards**
 
+**Note**
+
+>  3D Secure 2 is only supported on sites using SuiteCommerce or SuiteCommerce Advanced (SCA)
+
 In this step you add card as payment method in the web shop. You must complete the steps for each currency.
 
 1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
@@ -298,7 +302,7 @@ If you support alternative payment methods (e.g. wallet, ePayment etc.), you can
 
 >**Notes.**
 
->Alternative payment as gift cards and some invoice providers (Klarna and Arvato) are not supported. Alternative payments are only available for web shops using SiteBuilder and NOT Suite Commerce Advanced. Support for Suite Commerce Advanced web shops is available from NetSuite version 16.1. For each currency and payment method you need to go through steps described above.
+>Alternative payment as gift cards and some invoice providers (Klarna and Arvato) are not supported. Alternative payments are only available for web shops using SiteBuilder or SuiteCommerce Advanced with NetSuite version 16.1 or above. For each currency and payment method you need to go through steps described above.
 
 >1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 >2. Complete the details, using the screenshot and notes below for guidance.
