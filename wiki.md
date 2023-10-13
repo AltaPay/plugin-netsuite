@@ -162,11 +162,11 @@ In this step you add card as payment method in the web shop. You must complete t
 3. Press Save.
 4. Go to Setup > Accounting > Accounting lists > New > Select ‘Payment Method’.
 
-![select_payment_method](/Docs/Configuration/select_payment_method.jpg)
+    ![select_payment_method](/Docs/Configuration/select_payment_method.jpg)
 
 5. Complete the details, using the screenshot and notes below for guidance.
 
-![complete_payment_method_details](/Docs/Configuration/complete_payment_method_details.png)
+    ![complete_payment_method_details](/Docs/Configuration/complete_payment_method_details.png)
 
 <table>
 <tbody>
@@ -201,7 +201,7 @@ Next, you need to configure the payments. **This is mandatory if CVC needs to be
 
 1. Go to Setup > Accounting > Accounting preferences > Click the tab ‘Items/Transactions’ .
 
-![preferences_item_transactions](/Docs/Configuration/preferences_item_transactions.jpg)
+    ![preferences_item_transactions](/Docs/Configuration/preferences_item_transactions.jpg)
 
 2. Check ‘USE CARD SECURITY CODE FOR CREDIT CARD TRANSACTIONS’ under the ‘Payment Processing’ section
 3. Press Save.
@@ -212,7 +212,7 @@ Now, enable the payments on the website.
 2. Click edit on the website for which you want to enable payments.
 3. Click the ‘Shopping’ tab and check ‘REQUIRE AUTHORIZATION FOR CREDIT CARD TRANSACTIONS’.
 
-![click_require_authorization](/Docs/Configuration/click_require_authorization.jpg)
+    ![click_require_authorization](/Docs/Configuration/click_require_authorization.jpg)
 
 Press ‘Save’.
 
@@ -224,7 +224,7 @@ If the merchant has Suite Commerce Advanced version previous to Denali, you must
 4. Go to: Documents > Files > File Cabinet
 5. Go to: Web Site Hosting Files > Live Hosting Files > SSP Applications > NetSuite Inc. -Checkout 2.05.0 > Custom Checkout > js > src > core
 
-![custom_checkout](/Docs/Configuration/custom_checkout.jpg)
+    ![custom_checkout](/Docs/Configuration/custom_checkout.jpg)
 
 6. Click on ‘Add files’ and select the ‘Util.js’ that you modified.
 7. Replace the ‘img/altapay.jpg’ with an image that represents the payment method. The image can be uploaded from here: Documents > Files > File Cabinet and navigate to Web Site Hosting Files > Live Hosting Files > SSP Applications > NetSuite Inc. - Checkout 2.05.0 > Custom Checkout -> img
@@ -232,7 +232,7 @@ If the merchant has Suite Commerce Advanced version previous to Denali, you must
 9. Click on New Folder > name it Altapay
 10. Select SuiteCommerce Site Templates before saving the new folder in the TYPE dropdown
 
-![suite_commerce](/Docs/Configuration/suite_commerce.jpg)
+    ![suite_commerce](/Docs/Configuration/suite_commerce.jpg)
 
 11. Go to: Documents > Files > File Cabinet > Web Site Hosting Files > Live Hosting Files > SSP Applications > NetSuite Inc. - Checkout 2.05.0 > Custom Checkout > js > src > app > modules > Altapay
 12. Click ‘Add files’ and select the ‘configuration.js’, that you modified
@@ -302,7 +302,7 @@ If you support alternative payment methods (e.g. wallet, ePayment etc.), you can
 
 >**Notes.**
 
->Alternative payment as gift cards and some invoice providers (Klarna and Arvato) are not supported. Alternative payments are only available for web shops using SiteBuilder or SuiteCommerce Advanced with NetSuite version 16.1 or above. For each currency and payment method you need to go through steps described above.
+>Alternative payment as gift cards and some invoice providers (Arvato) are not supported. Alternative payments are only available for web shops using SiteBuilder or SuiteCommerce Advanced with NetSuite version 16.1 or above. For each currency and payment method you need to go through steps described above.
 
 >1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
 >2. Complete the details, using the screenshot and notes below for guidance.
@@ -376,7 +376,7 @@ If an AVS result does not appear in Accept or Hold, the AVS result will be rejec
 4. Go to Setup > Accounting > Accounting lists > New
 5. Select ‘Payment Method’.
 
-![new_payment_methods](/Docs/Configuration/new_payment_methods.jpg)
+    ![new_payment_methods](/Docs/Configuration/new_payment_methods.jpg)
 
 Complete the details, using the screenshot and the notes below for guidance.
 
