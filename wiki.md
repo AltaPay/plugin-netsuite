@@ -304,10 +304,10 @@ If you support alternative payment methods (e.g. wallet, ePayment etc.), you can
 
 >Alternative payment as gift cards and some invoice providers (Arvato) are not supported. Alternative payments are only available for web shops using SiteBuilder or SuiteCommerce Advanced with NetSuite version 16.1 or above. For each currency and payment method you need to go through steps described above.
 
->1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
->2. Complete the details, using the screenshot and notes below for guidance.
+1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
+2. Complete the details, using the screenshot and notes below for guidance.
 
->![altapay_plugin_profile_2](/Docs/Configuration/altapay_plugin_profile_2.jpg)
+    ![altapay_plugin_profile_2](/Docs/Configuration/altapay_plugin_profile_2.jpg)
 
 <table>
 <tbody>
@@ -722,55 +722,55 @@ To provide customer center access to individual customers follow the below steps
 
 **Where can I find the log files?**
 > In the case where you experience an issue with the AltaPay bundle we would like you to provide us with the steps leading to the issue and a log file. You can access the log file by following three simple steps.
->1. Go to: Customization > Plug-ins > Plug-in implementations
+1. Go to: Customization > Plug-ins > Plug-in implementations
 
->![log_files](/Docs/FAQ/log_files.jpg)
+    ![log_files](/Docs/FAQ/log_files.jpg)
 
->2. Click ‘Edit’ or ’View ’ beside ‘AltaPay’ 
->3. Click on the tab ‘Execution Log’
+2. Click ‘Edit’ or ’View ’ beside ‘AltaPay’ 
+3. Click on the tab ‘Execution Log’
 
 **How can I retrieve logs for AltaPay troubleshooting?**
  
 1. First, add filtering criteria to the logs view by clicking “Customize View”
 
->![customize_vew](/Docs/FAQ/customize_vew.jpg)
+    ![customize_vew](/Docs/FAQ/customize_vew.jpg)
 
 2. In the new window navigate to the “Criteria” tab
 
->![criteria](/Docs/FAQ/criteria.jpg)
+    ![criteria](/Docs/FAQ/criteria.jpg)
 
 3. Set the days from when to extract needed logs. There is already included filter for the date filter with default value set to “today”. To change this, click on the “Set Description” button next to the “Date” filter
 
->![date_filter](/Docs/FAQ/date_filter.png)
+    ![date_filter](/Docs/FAQ/date_filter.png)
 
 4. A new window is displayed where date filters can be set. Date filters can be set with relative settings based on today’s date or absolute. 
 
->![date_filter_set](/Docs/FAQ/date_filter_set.png)
+    ![date_filter_set](/Docs/FAQ/date_filter_set.png)
 
 <b>Example</b>
 
 To retrieve all the logs from yesterday and today’s date perform following steps:
 - In the “Date” select list set value “within”
 - In the “From” field select yesterday’s date
->![custom_date](/Docs/FAQ/custom_date.png)
+![custom_date](/Docs/FAQ/custom_date.png)
 - In the “To” field select today’s date 
 
 5. Click "Set" to apply the changes.
 6. Now set the filter for the script. In that way, only logs related to “AltaPay” bundle will be shown. To do that select “Script” value from the list.
 
->![script](/Docs/FAQ/script.jpg)
+    ![script](/Docs/FAQ/script.jpg)
 
 7. A new window will appear where actual value for the script should be configured. In the text area, key in AltaPay.
 
->![value_for_script](/Docs/FAQ/value_for_script.png)
+    ![value_for_script](/Docs/FAQ/value_for_script.png)
 
 8. Now click "Preview" to preview the extract.
 
->![preview](/Docs/FAQ/preview.jpg)
+    ![preview](/Docs/FAQ/preview.jpg)
 
 9. All logs which meet given criteria will be shown on the results page. To export logs, select “Export -PDF” or “Export - Microsoft Excel”
 
->![export](/Docs/FAQ/export.jpg)
+    ![export](/Docs/FAQ/export.jpg)
 
 **How can I remove the gateway field in the payment processing profile?**
 > If there is a gateway field in the payment processing profile, this can be ignored. However, you can remove the field:
