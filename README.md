@@ -34,6 +34,14 @@ Through the partnership of AltaPay and NetSuite, we have made it much easier for
 
 </td></tr> </table>
 
+## NetSuite Products Supported
+
+* NetSuite ERP
+* NetSuite OneWorld
+* SuiteCommerce
+* SuiteCommerce Advanced
+* Payment Link
+
 ## Changelog
 
 See [Changelog](CHANGELOG.md) for all the release notes.
