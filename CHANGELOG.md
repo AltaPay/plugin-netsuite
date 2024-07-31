@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.9]
+- Security improvements and fixes
+
 ## [1.6.8]
 - Add support for Klarna payments
 
