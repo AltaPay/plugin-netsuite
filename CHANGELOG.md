@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.7.0]
+- Add support for Checkout Design v2.
+
+## [1.6.8]
+- Add support for Klarna payments
+
 ## [1.6.8]
 - Add support for Klarna payments
 
