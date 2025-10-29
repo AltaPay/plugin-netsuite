@@ -98,69 +98,73 @@ The standard configuration connects the bundle with the test gateway. Follow the
 
     <img src="/Docs/Configuration/configuration_save.png" alt="configuring_edit" height="400">
 
-**Credit/debit cards**
+    **Credit/debit cards**
 
-**Note**
+    **Note**
 
->  3D Secure 2 is only supported on sites using SuiteCommerce or SuiteCommerce Advanced (SCA)
+    >  3D Secure 2 is only supported on sites using SuiteCommerce or SuiteCommerce Advanced (SCA)
 
-In this step you add card as payment method in the web shop. You must complete the steps for each currency.
+    In this step you add card as payment method in the web shop. You must complete the steps for each currency.
 
-1. Go to setup > Accounting > Payment Processing Profiles > ‘Add AltaPay Plugin Profile’.
+1. Go to **Setup** > **Accounting** > **Payment Processing Profiles** > **New Payment Processing Profile** > Select **Add Profile** for AltaPay from **Payment Gateway Integrations** list.
 
     <img src="/Docs/Configuration/altapay_plugin_profile.png" alt="altapay_plugin_profile" width="400">
 
 2. Complete the details, using the notes below for guidance.
 
 
-<table>
-<tbody>
-  <tr>
-    <td><strong>WEB SITE</strong></td>
-    <td>Select which web sites the bundle should cover.</td>
-  </tr>
-  <tr>
-    <td><strong>NAME</strong></td>
-    <td>This is for internal use and will not be shown to customers. We recommend that you use ‘Payment Method - Currency’ (e.g. Credit Card - EUR).</td>
-  </tr>
-  <tr>
-    <td><strong>Subsidiary</strong></td>
-    <td>Select from the drop-down list.</td>
-  </tr>
-  <tr>
-    <td><strong>CHARGE CURRENCIES</strong></td>
-    <td>This must correspond with the currency of the terminal. You can only select one currency.</td>
-  </tr>
-  <tr>
-    <td><strong>Settlement Bank account</strong></td>
-    <td>This is related to accounting and will not affect the settlement agreement with the acquirer.</td>
-  </tr>
-  <tr>
-    <td><strong>Authentication Credentials</strong></td>
-    <td>Enter the username and password. You will only be able to see asterisks, since they are password fields.</td>
-  </tr>
-  <tr>
-    <td><strong>AltaPay configuration</strong></td>
-    <td>Add terminal.</td>
-  </tr>
-  <tr>
-    <td><strong>AltaPay 3DSecure Auth</strong></td>
-    <td>Enable this, if you want to enable AltaPay 3dsecure authentication. You should enable Authentications option from Gateway Request Types as well.</td>
-  </tr>
-  <tr>
-    <td><strong>Alternative payment</strong></td>
-    <td>Leave the checkbox unchecked.</td>
-  </tr>
-  <tr>
-    <td><strong>Gateway Request Types</strong></td>
-    <td>Add the types that are needed for the terminal. To process payments with 3D Secure v1 or v2, check the Authentications box in the Gateway Request Types.</td>
-  </tr>
-</tbody>
-</table>
+    <table>
+    <tbody>
+      <tr>
+        <td><strong>WEB SITE</strong></td>
+        <td>Select which web sites the bundle should cover.</td>
+      </tr>
+      <tr>
+        <td><strong>NAME</strong></td>
+        <td>This is for internal use and will not be shown to customers. We recommend that you use ‘Payment Method - Currency’ (e.g. Credit Card - EUR).</td>
+      </tr>
+      <tr>
+        <td><strong>Subsidiary</strong></td>
+        <td>Select from the drop-down list.</td>
+      </tr>
+      <tr>
+        <td><strong>CHARGE CURRENCIES</strong></td>
+        <td>This must correspond with the currency of the terminal. You can only select one currency.</td>
+      </tr>
+      <tr>
+        <td><strong>Settlement Bank account</strong></td>
+        <td>This is related to accounting and will not affect the settlement agreement with the acquirer.</td>
+      </tr>
+      <tr>
+        <td><strong>Authentication Credentials</strong></td>
+        <td>Enter the username and password. You will only be able to see asterisks, since they are password fields.</td>
+      </tr>
+      <tr>
+        <td><strong>AltaPay configuration</strong></td>
+        <td>Add terminal.</td>
+      </tr>
+      <tr>
+        <td><strong>AltaPay 3DSecure Auth</strong></td>
+        <td>Enable this, if you want to enable AltaPay 3dsecure authentication. You should enable Authentications option from Gateway Request Types as well.</td>
+      </tr>
+      <tr>
+        <td><strong>AltaPay Form Style</strong></td>
+        <td>Select form style from the dropdown. The available options are Checkout and Checkout v2. This setting is applicable only when Alternative Payment is enabled.<br><strong>Checkout</strong><img src="Docs/Configuration/checkout.png" alt="configuring_edit" height="400"><br><strong>Checkout v2</strong><img src="Docs/Configuration/checkoutv2.png" alt="configuring_edit" height="400"></td>
+      </tr>
+      <tr>
+        <td><strong>Alternative payment</strong></td>
+        <td>Leave the checkbox unchecked.</td>
+      </tr>
+      <tr>
+        <td><strong>Gateway Request Types</strong></td>
+        <td>Add the types that are needed for the terminal. To process payments with 3D Secure v1 or v2, check the Authentications box in the Gateway Request Types.</td>
+      </tr>
+    </tbody>
+    </table>
 
 
 3. Press Save.
-4. Go to Setup > Accounting > Accounting lists > New > Select ‘Payment Method’.
+4. Go to **Setup** > **Accounting** > **Accounting lists** > **New** > Select **Payment Method** from the list.
 
     ![select_payment_method](/Docs/Configuration/select_payment_method.jpg)
 
@@ -168,32 +172,32 @@ In this step you add card as payment method in the web shop. You must complete t
 
     ![complete_payment_method_details](/Docs/Configuration/complete_payment_method_details.png)
 
-<table>
-<tbody>
-  <tr>
-    <td><strong>PAYMENT METHOD</strong></td>
-    <td>Name the payment method. This will be shown in the web shop.</td>
-  </tr>
-  <tr>
-    <td><strong>CREDIT CARD</strong></td>
-    <td>Select this checkbox.</td>
-  </tr>
-  <tr>
-    <td><strong>SUPPORTING MERCHANT ACCOUNTS</strong></td>
-    <td>Select the Payment processing profile you want to match to the payment method. (NAME in the Payment Processing Profile screen).
-	</td>
-  </tr>
-  <tr>
-    <td><strong>Flag</strong></td>
-    <td>web/standard.</td>
-  </tr>
-  <tr>
-    <td><strong>URL</strong></td>
-    <td>Place the icon in the File Cabinet and link to the icon or link to an icon on the internet
-.</td>
-  </tr>
-</tbody>
-</table>
+    <table>
+    <tbody>
+      <tr>
+        <td><strong>PAYMENT METHOD</strong></td>
+        <td>Name the payment method. This will be shown in the web shop.</td>
+      </tr>
+      <tr>
+        <td><strong>CREDIT CARD</strong></td>
+        <td>Select this checkbox.</td>
+      </tr>
+      <tr>
+        <td><strong>SUPPORTING MERCHANT ACCOUNTS</strong></td>
+        <td>Select the Payment processing profile you want to match to the payment method. (NAME in the Payment Processing Profile screen).
+      </td>
+      </tr>
+      <tr>
+        <td><strong>Flag</strong></td>
+        <td>web/standard.</td>
+      </tr>
+      <tr>
+        <td><strong>URL</strong></td>
+        <td>Place the icon in the File Cabinet and link to the icon or link to an icon on the internet
+    .</td>
+      </tr>
+    </tbody>
+    </table>
 
 6. Press Save.
 
